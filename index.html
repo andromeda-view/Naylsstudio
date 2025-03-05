@@ -3,144 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayls - Estética de Uñas</title>
+    <title>Nayls - Manicure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-        
         body {
             font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7e1ff;
-            color: #5e3b76;
-        }
-        .hero {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2px;
-            height: 500px;
-            margin-bottom: 0px;
-            overflow: hidden;
-        }
-        .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            width: 80%;
-        }
-        .hero-text h1 {
-            font-size: 50px;
-            font-family: 'Great Vibes', cursive;
-            margin: 0;
-        }
-        .container {
-            padding: 40px;
-            text-align: center;
-            margin-top: 0px;
-        }
-        .social-links {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 20px;
-            color: #a855f7;
-        }
-        .social-links a:hover {
-            color: #9333ea;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #a855f7;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background-color: #9333ea;
-        }
-        .services {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .service-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 280px;
-            text-align: center;
-        }
-        .service-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .footer {
-            margin-top: 30px;
-            padding: 20px;
-            background: #c084fc;
-            color: white;
-            text-align: center;
-            font-size: 14px;
         }
     </style>
 </head>
-<body>
-    <div class="hero">
-        <img src="https://i.pinimg.com/736x/32/50/5d/32505d32e8d884c6298e1712cc3244ca.jpg" alt="Uñas 1">
-        <img src="https://i.pinimg.com/736x/5a/cf/fd/5acffdb82cc1948d59b8ec22a7f63729.jpg" alt="Uñas 2">
-        <img src="https://i.pinimg.com/736x/a3/0d/54/a30d543a3e7ecb552454ded2e32a2591.jpg" alt="Uñas 3">
-        <img src="https://i.pinimg.com/736x/52/10/6b/52106bc447e06159db621fb80bf9ef0d.jpg" alt="Uñas 4">
-        <div class="hero-text">
-            <h1>N a y l s</h1>
-            <h2>Transforma tus uñas con nuestro arte y cuidado</h2>
-        </div>
-    </div>
-    <div class="container">
-        <h2>Servicios Exclusivos</h2>
-        <p>Elige entre una variedad de estilos y tratamientos para que tus uñas luzcan espectaculares.</p>
-        <div class="services">
-            <div class="service-card">
-                <img src="https://clicandpost.com/wp-content/uploads/2021/11/front-view-woman-getting-her-manicure-done-at-the-salon-scaled-1.jpg" alt="Manicura">
-                <h3>Manicura Clásica</h3>
-                <p>Un tratamiento ideal para el cuidado y embellecimiento de tus uñas.</p>
+<body class="bg-[#F3F8FA] flex">
+    <!-- Barra lateral -->
+    <aside class="w-64 bg-[#00202C] text-white p-6 h-screen shadow-lg">
+        <h2 class="text-[#D8A6A2] text-2xl font-semibold mb-4">Nayls</h2>
+        <ul>
+            <li class="py-2 px-4 rounded-lg hover:bg-[#13414F] hover:text-white cursor-pointer">Inicio</li>
+            <li class="py-2 px-4 rounded-lg hover:bg-[#13414F] hover:text-white cursor-pointer">Servicios</li>
+            <li class="py-2 px-4 rounded-lg hover:bg-[#13414F] hover:text-white cursor-pointer">Galería</li>
+            <li class="py-2 px-4 rounded-lg hover:bg-[#13414F] hover:text-white cursor-pointer">Contacto</li>
+        </ul>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="flex-1 p-6 bg-[#F3F8FA]">
+        <!-- Tarjeta de portada -->
+        <section class="bg-gradient-to-r from-[#00202C] via-[#54585A] to-[#D8A6A2] text-white p-10 rounded-lg flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold">Realza tu belleza con Nayls</h1>
+                <p class="mt-2">Descubre diseños únicos y personalizados para tus uñas.</p>
+                <a href="https://www.instagram.com/nayls.04?igsh=MWY4czNjbWZ1aXNpNA==" class="mt-4 inline-block bg-white text-[#00202C] px-4 py-2 rounded-lg shadow-md hover:bg-gray-100">Síguenos en Instagram</a>
             </div>
-            <div class="service-card">
-                <img src="https://st1.uvnimg.com/3c/24/0645c3a6488d81bd71bda62362d2/disenos-de-unas-para-halloween-2024.jpg" alt="Diseños">
-                <h3>Diseños Personalizados</h3>
-                <p>Crea un estilo único con diseños modernos y personalizados.</p>
-            </div>
+            <img src="https://i.pinimg.com/736x/32/50/5d/32505d32e8d884c6298e1712cc3244ca.jpg" alt="Uñas" class="w-40 rounded-full shadow-lg">
+        </section>
+        
+        <h2 class="text-xl font-semibold mt-6 text-[#00202C]">Nuestros diseños</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <img src="https://i.pinimg.com/736x/5a/cf/fd/5acffdb82cc1948d59b8ec22a7f63729.jpg" alt="Uñas 2" class="rounded-lg shadow-md object-cover w-48 h-48 mx-auto">
+            <img src="https://i.pinimg.com/736x/a3/0d/54/a30d543a3e7ecb552454ded2e32a2591.jpg" alt="Uñas 3" class="rounded-lg shadow-md object-cover w-48 h-48 mx-auto">
+            <img src="https://i.pinimg.com/736x/52/10/6b/52106bc447e06159db621fb80bf9ef0d.jpg" alt="Uñas 4" class="rounded-lg shadow-md object-cover w-48 h-48 mx-auto">
+            <img src="https://i.pinimg.com/736x/32/50/5d/32505d32e8d884c6298e1712cc3244ca.jpg" alt="Uñas 1" class="rounded-lg shadow-md object-cover w-48 h-48 mx-auto">
         </div>
-        <br><br>
-        <a href="#" class="btn">Reservar Ahora</a>
-        <div class="social-links">
-            <p>Síguenos en nuestras redes sociales:<br></p>      
-            <a href="https://www.instagram.com/nayls.04?igsh=MWY4czNjbWZ1aXNpNA==" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"></a>
-            <a href="#"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white"></a>
-            <a href="#"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
-        </div>
-    </div>
-    <div class="footer">
-        &copy; 2025 Nayls | Todos los derechos reservados
-    </div>
+        
+        <section class="mt-8 p-6 bg-white rounded-lg shadow-md text-[#00202C]">
+            <h2 class="text-xl font-semibold">Nuestros Servicios</h2>
+            <ul class="mt-4 list-disc list-inside">
+                <li>Manicure tradicional y permanente</li>
+                <li>Diseños personalizados y artísticos</li>
+                <li>Uñas acrílicas y de gel</li>
+                <li>Tratamientos para el cuidado de uñas</li>
+                <li>Asesoría en tendencias y colores</li>
+                <li>Servicio a domicilio en Santiago</li>
+            </ul>
+        </section>
+        
+        <section class="mt-8 p-6 bg-white rounded-lg shadow-md text-[#00202C]">
+            <h2 class="text-xl font-semibold">Contáctanos</h2>
+            <p class="mt-2">¡Reserva tu cita ahora y luce unas uñas increíbles!</p>
+            <p class="mt-2">📍 Ubicación: Santiago, Chile</p>
+            <p class="mt-2">📞 WhatsApp: +56 9 1234 5678</p>
+            <p class="mt-2">📧 Email: contacto@nayls.com</p>
+        </section>
+    </main>
 </body>
 </html>
